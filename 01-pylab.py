@@ -7,6 +7,7 @@ import joblib
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import seaborn as sns
+from scipy import linalg as LA
 from glob import glob
 
 def figsize(sizex, sizey):
