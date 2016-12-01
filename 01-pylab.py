@@ -12,3 +12,6 @@ from glob import glob
 
 def figsize(sizex, sizey):
     mpl.rcParams['figure.figsize'] = (sizex, sizey)
+
+# text display width
+pd.options.display.width = 100
