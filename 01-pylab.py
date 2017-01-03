@@ -6,6 +6,8 @@ import pendulum
 import os
 import joblib
 import matplotlib as mpl
+if 'DISPLAY' not in os.environ:
+    mpl.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy import linalg as LA
