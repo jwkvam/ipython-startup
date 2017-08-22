@@ -18,3 +18,5 @@ def figsize(sizex, sizey):
 
 # text display width
 pd.options.display.width = 100
+sns.set()
+sns.set_style('darkgrid')
