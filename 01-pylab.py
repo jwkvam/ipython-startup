@@ -3,12 +3,22 @@ import numpy.random as rng
 import pandas as pd
 import pendulum
 import os
-import joblib
-import matplotlib as mpl
-if 'DISPLAY' not in os.environ:
-    mpl.use('Agg')
-import matplotlib.pyplot as plt
-import seaborn as sns
+try:
+    import joblib
+except ImportError:
+    print('joblib not installed')
+    pass
+try:
+    import matplotlib as mpl
+    if 'DISPLAY' not in os.environ:
+        mpl.use('Agg')
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    sns.set()
+    sns.set_style('darkgrid')
+except ImportError:
+    print('matplotlib or seaborn not installed')
+    pass
 from scipy import linalg as LA
 from glob import glob
 
