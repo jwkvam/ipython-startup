@@ -15,7 +15,7 @@ try:
     import matplotlib.pyplot as plt
     import seaborn as sns
     sns.set()
-    sns.set_style('whitegrid')
+    sns.set_style('darkgrid')
 except ImportError:
     print('matplotlib or seaborn not installed')
     pass
